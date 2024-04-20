@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+TEXTO { color: aliceblue; FONRT-SIZE: 20PX ; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"}
+
+TITULO { color: aquamarine; font-size: 50px; font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif" }
+
+texto2 {color: burlywood; font-size: 20px; font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace" }
+
+texto3{ color: aqua; font-size: 30px ; font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"}
+
+.animacion1 {	animation-name: enf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+ @keyframes enf {
+    from { transform:scale(0.5); filter: invert(0%); filter:blur(10px); filter: saturate(0%);}
+    to   {filter:blur(0px); transform:scale(0.1); filter: saturate(300%); filter: invert(100%);}
+ }
+ 
+ .animacion2 {	animation-name: enf2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+ @keyframes enf2 {
+    from { filter: hue-rotate(170deg);}
+    to   { filter: hue-rotate(0deg);}
+ }
+
+ .animacion3 {	animation-name: enf3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+ @keyframes enf3 {
+    from {  filter: sepia(0%) saturate(0%) contrast(0%);}
+    to   { filter: sepia(60%) saturate(70%) contrast(130%);}
+ }
+
+ .an4 {	animation-name: enf4;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+    }
+
+    @keyframes enf4 {
+       from { filter: invert(0%) grayscale(0%) blur(0px) contrast(50%);}
+       to   { filter: invert(60%) grayscale(70%) blur(2px) contrast(500%);}
+    }
+    
+   .an5 {
+    animation-name: zoom;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes zoom {
+    from { filter: contrast(0.4) brightness(0.2) saturate(1) hue-rotate(10deg);}
+    to   { filter: contrast(2.5) brightness(1.8) saturate(4) hue-rotate(100deg);}
+   }
+
+.an6 {
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+
+ @keyframes stretch {
+    from { transform: rotate(0deg) scale(1); }
+     to { transform: rotate(340deg) scale(1.5); }
+    } 
